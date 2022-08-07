@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+.close {
+  width: 30%;
+  margin: 0 auto;
+  padding: 1px;
+  position: absolute;
+  right: 25px;
+  top: 22px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 100px;
+  content: ' ';
+  height: 27px;
+  width: 5px;
+  background-color: rgb(255, 0, 0);
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+  </style>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="script.js" type="text/javascript"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body >
+  <div class="container flexbox"  id="realBody">
+   
+  </div>
+  
+</body>
+</html>
