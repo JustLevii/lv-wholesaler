@@ -1,8 +1,5 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 local openedUI 
-Citizen.CreateThread(function()
-    
-end)
 
 local ui = false
 RegisterNetEvent('lv-seller:client:openUI', function()
@@ -16,11 +13,6 @@ end)
 RegisterNetEvent('lv-seller:client:openUIBalik', function()
     openUI("BALIK")
 end)
-
--- RegisterCommand("test2", function()
---     openUI("BALIK")
--- end, false)
-
 
 RegisterNUICallback("buyItem", function(data,cb)
     if QBCore.Functions.HasItem(data.itemName) then
